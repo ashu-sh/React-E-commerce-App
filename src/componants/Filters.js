@@ -10,7 +10,7 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
-          label="Ascending"
+          label="Price Low to High"
           name="group1"
           type="radio"
           id={`inline-1`}
@@ -19,7 +19,7 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
-          label="Descending"
+          label="Price High to Low"
           name="group1"
           type="radio"
           id={`inline-2`}
@@ -29,7 +29,7 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
-          label="Include Out of Stock"
+          label="Products Out of Stock"
           name="group1"
           type="checkbox"
           id={`inline-3`}
@@ -47,7 +47,7 @@ const Filters = () => {
         />
       </span>
       <Button
-        variant="light">Clear Filters</Button>
+        variant="warning">Clear Filters</Button>
     </div>
   );
 };

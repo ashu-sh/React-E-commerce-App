@@ -12,7 +12,7 @@ const SingleProduct = ({prod}) => {
         <Card.Img variant='top'src={prod.image} alt={prod.name}/>
         <Card.Body>
             <Card.Title>{prod.name}</Card.Title>
-            <Card.Subtitle style={{paddingBottom:10}}><span>INR {prod.price.split(".")[0]}</span>
+            <Card.Subtitle style={{paddingBottom:10}}><span>₹ {prod.price.split(".")[0]}</span>
             {prod.fastDelivery?(<div>Fast Delivery</div>):(<div>4 Days Delivery</div>)}
             </Card.Subtitle>
             {
@@ -24,7 +24,7 @@ const SingleProduct = ({prod}) => {
                     })
                 }} variant='danger'>Remove From Cart</Button>
                 ):(
-                    <Button onClick={()=>{
+                    <Button variant='warning' onClick={()=>{
                         dispatch({
                             type:"ADD_TO_CART",
                             payload:prod

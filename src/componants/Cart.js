@@ -27,7 +27,7 @@ const Cart = () => {
                   <Col md={2}>
                     <span>{prod.name}</span>
                   </Col>
-                  <Col md={2}>INR {prod.price}</Col>
+                  <Col md={2}>₹ {prod.price.split(".")[0]}</Col>
                   <Col md={2}>
                     <Form.Control as="select"value={prod.qty} 
                        onChange={(e)=>
@@ -63,8 +63,8 @@ const Cart = () => {
       </div>
       <div className='filters summary'>
         <span className='title'>Total ({cart.length}) Items</span>
-        <span style={{fontWeight:700,fontSize:20}}>Total Amount: INR {total}</span>
-        <Button type='button'disabled={cart.length===0}>Place The Order</Button>
+        <span style={{fontWeight:700,fontSize:20}}>Total Amount: ₹ {total}</span>
+        <Button type='button' variant='warning' disabled={cart.length===0}>Place The Order</Button>
       </div>
     </div>
   )

@@ -9,14 +9,14 @@
     justify-content: space-around;
 }
 .filters {
-    background-color: #343a40;
+    background-color: #000;
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     width: 20%;
     margin: 10px;
-    height: 86vh;
+    height: auto;
 }
 .filters > span {
     padding-bottom: 20px;
@@ -58,4 +58,3 @@
 .summary {
     width: 30%;
 }
-  
