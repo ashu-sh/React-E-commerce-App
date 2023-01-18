@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Demo Link - https://react-app-amazon-e-commerce.netlify.app/
+Demo Link - https://react-e-commerce-amazon.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
